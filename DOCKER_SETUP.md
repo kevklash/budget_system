@@ -66,7 +66,7 @@ docker-compose exec web python manage.py shell
 4. Create a Campaign for that brand
 5. Watch Celery Monitor at http://localhost:5555/ for background tasks
 
-That's it! Your complete budget management system is running with automatic:
+The budget management system runs with automatic:
 - Budget enforcement (every 5 minutes)
 - Dayparting checks (every minute)  
 - Daily resets (midnight)

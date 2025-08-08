@@ -36,7 +36,7 @@ cd budget-system
 docker-compose up --build
 ```
 
-That's it! Your entire system will be running with:
+That's it. The entire system will be running with:
 - **Django Admin**: http://localhost:8000/admin/
 - **Celery Monitor**: http://localhost:5555/
 - **Redis**: localhost:6379
