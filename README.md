@@ -41,6 +41,7 @@ That's it! Your entire system will be running with:
 - **Celery Monitor**: http://localhost:5555/
 - **Redis**: localhost:6379
 - **Auto-scheduled tasks**: Budget enforcement, dayparting, daily resets
+- **Database migrations**: Automatically applied on startup
 
 ### Create Superuser (Docker)
 ```bash
@@ -98,7 +99,7 @@ celery -A budget_system beat --loglevel=info
 The Docker setup includes these services:
 
 ### Core Services
-- **web**: Django application server (port 8000)
+- **web**: Django application server (port 8000) - Automatically runs migrations on startup
 - **redis**: Redis database for Celery (port 6379)
 - **celery-worker**: Background task processor
 - **celery-beat**: Scheduled task executor
