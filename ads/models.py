@@ -84,7 +84,7 @@ class SpendLog(models.Model):
         ordering = ['-timestamp']
 
     def __str__(self) -> str:
-        return f"{self.campaign.name}: ${self.amount} at {self.timestamp}"
+        return f"{self.campaign.name}: ${float(self.amount):.2f} at {self.timestamp}"
 
 
 class DaypartingSchedule(models.Model):
