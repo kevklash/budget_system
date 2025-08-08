@@ -48,6 +48,11 @@ That's it! Your entire system will be running with:
 docker-compose exec web python manage.py createsuperuser
 ```
 
+### Restart the backend if changes were added(Docker)
+```bash
+docker-compose restart web
+```
+
 ## Manual Setup (Alternative)
 
 ### Prerequisites
